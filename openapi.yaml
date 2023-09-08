@@ -1,9 +1,7 @@
 openapi: 3.0.3
 info:
   title: Choreo Samples - Reading List - Nodejs REST API
-  description: >-
-    This is a sample API specification for a simple reading list application with in-memory cache
-    written in Nodejs
+  description: This is a sample API specification for a simple reading list application with in-memory cache written in Nodejs
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
@@ -12,7 +10,7 @@ externalDocs:
   description: Choreo
   url: https://choreo.dev
 servers:
-  - url: https://argo-ws.coinbase.pp.ua
+  - url: http://localhost:3000
 tags:
   - name: books
     description: In-memory book list cache API
@@ -27,8 +25,5 @@ paths:
       responses:
         "200":
           description: Successful operation
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/StringArray"
-  
+             
+
